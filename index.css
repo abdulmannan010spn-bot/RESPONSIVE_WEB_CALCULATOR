@@ -29,6 +29,7 @@ body {
   border-radius: 1rem;
   box-shadow: 0 0 2vmin rgba(131, 130, 130, 0.5);
 }
+
 .btn {
   display: grid;
   grid-template-columns: repeat(4, 8.5vmin);
@@ -40,9 +41,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: #ffc8fb;
-
   border-radius: 50%;
   height: 8.5vmin;
   width: 8.5vmin;
@@ -50,6 +49,7 @@ button {
   font-size: 3.5vmin;
   box-shadow: 0 0 1rem rgba(70, 70, 70, 0.3);
   color: #595758;
+  cursor: pointer;
 }
 
 button:hover {
@@ -78,4 +78,64 @@ input {
   font-size: 7vmin;
   padding: 2vmin;
   color: #595758;
+  text-align: right;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    width: 80vw;
+    height: auto;
+    padding: 16px;
+    border-radius: 2.5vmin;
+  }
+
+  .btn {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  button {
+    height: 16vw;
+    width: 16vw;
+    font-size: 6.5vw;
+  }
+
+  .screen input {
+    height: 110px;
+    margin-bottom: 1rem;
+  }
+
+  input {
+    font-size: 32px;
+    padding: 12px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 360px) {
+  .container {
+    width: 90vw;
+    padding: 12px;
+    border-radius: 2.5vmin;
+  }
+
+  .btn {
+    gap: 8px;
+  }
+
+  button {
+    height: 18vw;
+    width: 18vw;
+    font-size: 7vw;
+  }
+
+  .screen input {
+    height: 95px;
+  }
+
+  input {
+    font-size: 26px;
+    padding: 8px;
+  }
 }
