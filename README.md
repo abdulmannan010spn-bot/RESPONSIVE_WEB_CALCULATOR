@@ -28,32 +28,6 @@ This is a lightweight, single-page calculator with a soft pink circular-button d
 - 💫 Smooth press animations and hover states on every button
 - ⚡ Zero dependencies — pure HTML, CSS, and JavaScript
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-Just a web browser. No installation, no build step, no server required.
-
-### Run Locally
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-
-# Navigate into the project directory
-cd your-repo-name
-
-# Open the app directly
-open index.html        # macOS
-start index.html        # Windows
-xdg-open index.html      # Linux
-```
-
-Or serve it with any static file server:
-
-```bash
-npx serve .
-```
 
 Then visit the local address it prints (e.g. `http://localhost:3000`).
 
